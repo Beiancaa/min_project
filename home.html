@@ -1,0 +1,123 @@
+<html>
+<style>
+.footer
+        {
+         background-color: magenta;
+         padding:20px;
+         font-weight: bold;
+         font-size: 25px;
+        }
+h1{
+    text-align: center;
+    color: Magenta;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+
+tr:nth-child(even){background-color: Magenta }
+tr:nth-child(odd){background-color: MediumVioletRed }
+
+th {
+    background-color: MediumVioletRed ;
+    color: black;
+   }
+</style>
+
+<body>
+  <h1>HTML basic tags</h1>
+ <table>
+  <tr>
+    <th><h2>Tag</h2></th>
+    <th><h2>Discription</h2></th>
+    </tr>
+  <tr>
+    <td>< DOCTYPE></td>
+    <td>Defines the document type</td>
+   </tr>
+  <tr>
+    <td>< html></td>
+    <td>Defines an HTML document</td>
+  </tr>
+  <tr>
+    <td>< title></td>
+    <td>Defines a title for the document</td>
+  </tr>
+  <tr>
+    <td>< body></td>
+    <td>Defines the document's body</td>
+  </tr>
+  <tr>
+    <td>< h1> to < h6></td>
+    <td>Defines HTML headings</td>
+  </tr>
+  <tr>
+    <td>< p></td>
+    <td>Defines a paragraph</td>
+  </tr>
+  <tr>
+    <td>< br></td>
+    <td>Inserts a single line break</td>
+  </tr>
+  <tr>
+    <td>< hr></td>
+    <td>Defines a thematic change in the content</td>
+  </tr>
+  <tr>
+    <td>< !--...--></td>
+    <td>Defines a comment</td>
+  </tr>
+ </table>
+
+ <h1>Table Properties</h1>
+ <table>
+  <tr>
+    <th><h2>Property</h2></th>
+    <th><h2>Discription</h2></th>
+   </tr>
+  <tr>
+    <td>border-collapse</td>
+    <td>Specifies whether or not table borders should be collapsed</td>
+   </tr>
+  <tr>
+    <td>border-spacing</td>
+    <td>Specifies the distance between the borders of adjacent cells</td>
+  </tr>
+  <tr>
+    <td>caption-side</td>
+    <td>Specifies the placement of a table caption</td>
+  </tr>
+  <tr>
+    <td>empty-cells</td>
+    <td>Specifies whether or not to display borders and background on empty cells in a table</td>
+  </tr>
+  <tr>
+    <td>table-layout</td>
+    <td>Sets the layout algorithm to be used for a table</td>
+ </table>
+ 
+ <div>
+        <p class="footer" id="date" ></p>
+ </div>
+</body>
+
+<script>
+      var  n =  new Date();
+ var y = n.getFullYear();
+ var m = n.getMonth()+1;
+ var d = n.getDate();
+ document.write ("\n");
+var h = n.getHours();
+var min = n.getMinutes();
+
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y +"  "+ h +":" +min ;
+</script>
+
+</html>
