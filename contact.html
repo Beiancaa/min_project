@@ -1,12 +1,22 @@
 <html>
   <style>
-  ho{
-    background: white;
+  #ho{
+    background-color: white;
     display: block;
     height: 20px;
-    width: 50px;
+    width: 70px;
     float: right;
 }  
+    #log
+    {
+        background-color: purple;
+        display: block;
+         height: 50px;
+         width: 150px;
+         float: none;
+         border-radius: 10px;
+         float: right;
+     }
     input[type=text], select
     {
     width: 20%;
@@ -81,12 +91,13 @@
       }
    </script>
   </head>
-<body>
+  <body>
     <div>
-        <button id="ho" onclick="window.location.href='https://preview.c9users.io/beianca/min_project/home.html?_c9_id=livepreview3&_c9_host=https://ide.c9.io'">Continue</button><br><br>
+      <button id="ho" onclick="window.location.href='https://preview.c9users.io/beianca/min_project/home.html?_c9_id=livepreview3&_c9_host=https://ide.c9.io'">Home</button><br><br>  
     <input type="text" id="mail" name="Email" placeholder="email address">
     <input type="text" id="pass" name="Password" placeholder="password">
-    <input type="submit"  value="Log In">
+    <button id="log" onclick="window.location.href='https://preview.c9users.io/beianca/min_project/home.html?_c9_id=livepreview3&_c9_host=https://ide.c9.io'" >LogIn</button>
+    
      
       <fieldset>
           <legend><h1>Sign Up</h1></legend>
